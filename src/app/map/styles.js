@@ -1,0 +1,90 @@
+import {StyleSheet} from 'react-native'
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    justifyContent: 'center',
+  },
+  locationDisabledContainer: {
+    flex: 1,
+    backgroundColor: '#fff',
+    justifyContent: 'center',
+    gap: 15,
+    padding: 20,
+  },
+  map: {
+    width: '100%',
+    height: '100%',
+  },
+  locationInfo: {
+    position: 'absolute',
+    top: 70,
+    left: 20,
+    right: 20,
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    borderRadius: 15,
+    overflow: 'hidden',
+  },
+  locationContent: {
+    padding: 15,
+  },
+  locationTitle: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#1f2937',
+    marginBottom: 4,
+  },
+  coordinates: {
+    fontSize: 14,
+    color: '#4b5563',
+  },
+  controls: {
+    position: 'absolute',
+    right: 20,
+    bottom: 100,
+    gap: 10,
+  },
+  controlButtonLight: {
+    flex: 1,
+    padding: 10,
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'black',
+    borderRadius: 23,
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  controlButtonDark: {
+    flex: 1,
+    padding: 10,
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'white',
+    borderRadius: 23,
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  errorText: {
+    fontSize: 16,
+    color: '#ef4444',
+    textAlign: 'center',
+    marginTop: 20,
+  },
+});
