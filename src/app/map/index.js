@@ -18,11 +18,9 @@ import { BlurView } from 'expo-blur';
 import { LocateFixedIcon, SunIcon, MoonIcon } from 'lucide-react-native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import { useDisplayAddress } from '../../hooks/useDisplayAddress';
-import { mapCustomStyle } from '../../constants/map';
+import { GOOGLE_PLACES_API_KEY, mapCustomStyle } from '../../constants/map';
 import { useTheme } from '../../hooks/useTheme';
 import { styles } from './styles';
-
-const GOOGLE_PLACES_API_KEY = ''; // never save your real api key in a snack!
 
 const MapScreen = () => {
   const [markerLocation, setMarkerLocation] = useState(null);
