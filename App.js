@@ -1,20 +1,9 @@
-import { Text, SafeAreaView, StyleSheet } from 'react-native';
+import { registerRootComponent } from "expo";
+import { ExpoRoot } from "expo-router";
 
-export default function App() {
-  return <SafeAreaView style={styles.container}>Hello World</SafeAreaView>;
+ export default function App() {
+  const ctx = require.context("./src/app");
+  return <ExpoRoot context={ctx} />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
-    padding: 8,
-  },
-  paragraph: {
-    margin: 24,
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-});
+ registerRootComponent(App);
